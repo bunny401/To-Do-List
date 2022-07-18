@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+
+ 
+ 
+
+<body>
+
+<script type="text/javascript">
+   var keynum, lines = 1;
+
+      function limitLines(obj, e) {
+        // IE
+        if(window.event) {
+          keynum = e.keyCode;
+        // Netscape/Firefox/Opera
+        } else if(e.which) {
+          keynum = e.which;
+        }
+
+        if(keynum == 13) {
+          if(lines == obj.rows) {
+            return false;
+          }else{
+            lines++;
+          }
+        }
+      }
+</script>
+
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <form class="form-inline">
+  
+  <table>
+  
+  <tr>
+  
+  <td>
+  
+  <a class="navbar-brand" href="#" style="color: white;">Home Work2- Areeba T. Shoaib -EZXFWK</a>
+   </td>
+   
+   <td>
+  
+  <a href="#" style="color: white;">Home </a>
+   </td>
+   
+   <td style="width:10px;"> </td> 
+    <td>
+  
+  <a href="#" style="color: white;">Shop</a>
+   </td>
+   
+   
+   <td style="width:300px;"> </td> 
+   <td>   <input class="form-control mr-sm-2" type="text" placeholder="User name " id= "usernameid" style= "padding-right:5px;" >  </td>
+   
+    <td>   <input class="form-control mr-sm-2" type="text" placeholder="Password"> </td>
+   
+   
+  </tr>
+  
+  </table>
+    <!-- <a class="navbar-brand" href="#" style="color: white;">Homework2</a> -->
+	
+	<!-- <a href="#" style="color: white;">Home </a> -->
+	<!-- &nbsp&nbsp&nbsp -->
+	<!-- <a href="#" style="color: white;">Shop</a> -->
+	
+	
+    <!-- <input class="form-control mr-sm-2" type="text" placeholder="User name " id= "usernameid" style= "padding-right:5px;" > -->
+	 <!-- <input class="form-control mr-sm-2" type="text" placeholder="Password"> -->
+	 
+	
+    <button class="btn btn-success" type="submit" style= "padding-right:2px;">Login </button>
+	 
+	
+	<a href="Registration.html" style= "padding-right:1px;">Register</a>
+	  <!---   <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+   Register hide show
+  </a> --->
+  
+	
+  </form>
+</nav>
+
+<br>
+<div class="container">
+  
+  <div class="card">
+    <div class="card-header">Registration</div>
+    <div class="card-body">
+	
+	<form action = "abc.html">
+		<div class="form-group input-group">
+		
+		<label for="email">Email &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </label>
+		
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="email" class="form-control" placeholder="abc@yahoo.com" type="email" required>
+    </div>
+	
+	
+	
+	 
+ <div class="form-group input-group">
+		
+		<label for="email">Password &nbsp&nbsp&nbsp&nbsp&nbsp  </label>
+		
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		 </div>
+        <input name="password" class="form-control" placeholder="Password"  type="password" required>
+		
+		
+
+    </div>
+	
+	
+	<div class="form-group input-group">
+		
+	<label for="Age">Age(between 18 and 99)</label>
+		
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		 </div>
+        <input type="number" class="form-control" placeholder="18-99"   min="18"  max="99" >
+		
+		
+
+    </div>
+	<div class="form-group input-group">
+	
+		<label for="intro"> Introduction (between 1 and 5 rows)  </label>
+		
+		<textarea id="w3review" name="w3review" rows="5" cols="100" max = "5"  onkeydown="return limitLines(this, event)">
+ 
+</textarea>
+    </div>
+	
+	
+  
+
+   <div class="form-group row">
+                                    <div class="input-group text-right">
+                                        <div class="col-md-12 bg-light text-right">
+                                            <a href="./homepage.html"><button class="btn btn-danger" type="button" >Cancel</button></a>
+                                            <a href="abc.html"> <button class="btn btn-primary" type="submit" >submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+<br>
+
+ 
+  <!-- <button type="submit" class="btn btn-primary" onclick="document.location='abc.html'" >Submit</button> -->
+   
+	
+	
+</form>
+	
+	
+	</div> 
+     
+  </div>
+</div>
+
+</body>
+</html>
